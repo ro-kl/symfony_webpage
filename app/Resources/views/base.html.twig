@@ -2,12 +2,39 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        <title>{% block title %}Welcome{% endblock %}</title>
+        <link rel="stylesheet" href = "{{ asset('main.css') }}" />
+        <link rel="stylesheet" href = "{{ asset('navigation.css') }}" />
+        <link rel="stylesheet" href = "{{ asset('navigation.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        {% block stylesheets %}
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        <div id="wrapper">
+
+            <!-- navi -->
+            <ul class="topnav" id="myTopnav">
+                <li><a class="logo" href="./start">Logo</a></li>
+                <li><a href="./start">Home</a></li>
+                <li><a href="./about">About</a></li>
+                <li><a href="./about">About2</a></li>
+                <li><a href="./about">About2</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveNavigation()">☰</a>
+                </li>
+            </ul>
+
+            <div id="content">
+
+                {% block body %}{% endblock %}
+
+
+            </div>
+        </div>
+        {% block javascripts %}
+            <script src="{{ asset('navigation.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
