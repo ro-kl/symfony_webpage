@@ -13,23 +13,7 @@ class WebController extends Controller
      */
     public function startPageAction()
     {
-        $welcomeText = "start";
-
-        return $this->render('default/startPage.html.twig', [
-            'welcomeText' => $welcomeText
-        ]);
-    }
-
-    /**
-     * @Route("/web/about", name="aboutPage")
-     */
-    public function aboutPageAction()
-    {
-        $aboutText = "about";
-
-        return $this->render('default/aboutPage.html.twig', [
-            'aboutText' => $aboutText
-        ]);
+        return $this->render('default/startPage.html.twig');
     }
 
     /**

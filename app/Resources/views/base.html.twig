@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome{% endblock %}</title>
-        <link rel="stylesheet" href = "{{ asset('main.css') }}" />
-        <link rel="stylesheet" href = "{{ asset('navigation.css') }}" />
-        <link rel="stylesheet" href = "{{ asset('navigation.css') }}" />
+        <link rel="stylesheet" href = "{{ asset('css/main.css') }}" />
+        <link rel="stylesheet" href = "{{ asset('css/navigation.css') }}" />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         {% block stylesheets %}
         {% endblock %}
@@ -16,11 +15,11 @@
 
             <!-- navi -->
             <ul class="topnav" id="myTopnav">
-                <li><a class="logo" href="./start">Logo</a></li>
-                <li><a href="./start">Home</a></li>
-                <li><a href="./about">About</a></li>
-                <li><a href="./about">About2</a></li>
-                <li><a href="./about">About2</a></li>
+                <li><a class="logo" href="#"><b>RK</b></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#skills">SKILLS</a></li>
                 <li class="icon">
                     <a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveNavigation()">☰</a>
                 </li>

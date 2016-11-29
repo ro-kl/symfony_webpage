@@ -1,0 +1,24 @@
+body {
+    margin:0;
+    background-color: #F2F2F2;
+    font-family: 'Roboto', sans-serif;
+    }
+
+#contentText {
+    padding: 16px;
+    }
+
+#headerImage {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("/img/headerpic.jpg");
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}    
+
+#break {
+    height: 500px;
+}
