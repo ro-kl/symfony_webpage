@@ -5,13 +5,13 @@ body {
     }
 
 #contentText {
-    padding: 16px;
+    padding: 45px 16px 55px 16px;
     }
 
 #headerImage {
     margin: 0px;
     padding: 0px;
-    background-image: url("/img/headerpic.jpg");
+    /*background-image: url("/img/headerpic.jpg");*/
     min-height: 400px; 
     background-attachment: fixed;
     background-position: center;
