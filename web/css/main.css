@@ -1,12 +1,16 @@
 body {
     margin:0;
-    background-color: #F2F2F2;
+    background-color: #121212;
     font-family: 'Roboto', sans-serif;
     }
 
 #contentText {
     padding: 45px 16px 55px 16px;
     }
+
+#content {
+    background: #F2F2F2;
+}
 
 #headerImage {
     margin: 0px;
@@ -19,6 +23,26 @@ body {
     background-size: cover;
 }    
 
-#break {
-    height: 500px;
+/*FOOTER*/
+
+#footer {
+    height: auto;
+    font-size: 10px;
+    background: #121212;
 }
+
+#footer ul {
+    padding: 0px;
+}
+
+#footer li {
+  display: inline;
+}
+
+#footer a {
+  color: #f2f2f2;
+  text-align: left;
+  padding-left: 16px;
+  text-decoration: none;
+}
+
